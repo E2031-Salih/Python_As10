@@ -1,0 +1,15 @@
+a = b = 0
+for i in sudoku:
+    if a % 3 == 0:
+        print("---------------------")
+    for j in i:
+        b += 1
+        print(j, end = " ")
+        if b == 9:
+            print()
+            b = 0
+            a += 1
+            if a == 9:
+                print("---------------------")
+        elif b % 3 == 0 :
+            print("|", end = " ")
